@@ -1,0 +1,195 @@
+@import url(https://fonts.googleapis.com/css?family=Manrope:regular,500,700,800);
+
+body {
+    font-family: 'Manrope', sans-serif;
+}
+
+.sticky-footer {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.title-2 {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 1;
+}
+
+.title-2 span {
+    color: #81b4bd;
+}
+
+/* Header */
+
+.header {
+    padding: 40px 0;
+}
+
+/* Nav */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.nav-list a {
+    color: #000;
+
+    transition: color 0.2s ease-in;
+}
+
+.nav-list a.active {
+    color: #81b4bd;
+}
+
+.nav-list a:hover {
+    color: #00CEB5;
+}
+
+/* Main page */
+
+/* Promo */
+
+.promo {
+    display: flex;
+    align-items: center;
+    padding-left: 70px;
+
+    height: 500px;
+    background-color: #394D42;
+    background-image: url(./../img/promo/promo-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 40px;
+
+    color: #fff;
+}
+
+@media (-webkit-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+    .promo {
+        background-image: url(./../img/promo/promo-bg@2x.jpg);
+    }
+}
+
+.promo-title {
+    font-weight: 800;
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.promo-text {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+/* Main content */
+
+.main-content {
+    padding: 90px 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+}
+
+.content-row {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+}
+
+.content-row.content-row-reverse {
+    flex-direction: row-reverse;
+}
+
+.content-img {
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 40px;
+}
+
+.content-text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.content-text p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.content-text a {
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #81b4bd;
+}
+
+
+/* Footer */
+
+.footer {
+    margin-top: auto;
+
+    padding: 60px 0;
+    background: #111;
+    color: #fff;
+}
+
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.footer-copyright {
+    font-size: 14px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-contacts {
+    text-align: right;
+}
+
+.footer-phone {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.footer-email {
+    display: inline-block;
+    margin-bottom: 10px;
+
+    font-size: 14px;
+    line-height: 1.5;
+    color: #00bda6;
+}
+
+.footer-address {
+    font-size: 14px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.5);
+}
